@@ -8,7 +8,7 @@ int main()
     printf("\nCOLUMN-: ");
     scanf("%d",&y);
     int matrix1[x][y];
-    int matrix2[y][y];
+    int matrix2[y][x];
 
     for (int i = 0; i < 4; i++)
     {
