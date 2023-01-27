@@ -10,25 +10,25 @@ int main()
     int matrix1[x][y];
     int matrix2[y][x];
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < x; i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < y; j++)
         {
             printf("Enter the element ",matrix1[i][j]);
             scanf("%d",&matrix1[i][j]);
         }
     }
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < x; i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < y; j++)
         {
             matrix2[j][i] = matrix1[i][j];
         }
     }
  
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < x; i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < y; j++)
         {
             printf("%d\t", matrix1[i][j]);
         }
@@ -37,9 +37,9 @@ int main()
 
     printf("\nthe transpose of the matrix is given below\n\n\n\n");
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < y; i++)
     {
-        for (int j = 0; j < 4; j++)
+        for (int j = 0; j < x; j++)
         {
             printf("%d\t", matrix2[i][j]);
         }
