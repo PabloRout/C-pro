@@ -1,34 +1,28 @@
 #include <stdio.h>
 int main()
 {
-    int x,y;
-    printf("\t\t\t***Enter the row and column of matrix***\n\n");
-    printf("\nROWS-: ");
-    scanf("%d",&x);
-    printf("\nCOLUMN-: ");
-    scanf("%d",&y);
-    int matrix1[x][y];
-    int matrix2[y][x];
+    int matrix1[3][3];
+    int matrix2[3][3];
 
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < y; j++)
+        for (int j = 0; j < 3; j++)
         {
             printf("Enter the element ",matrix1[i][j]);
             scanf("%d",&matrix1[i][j]);
         }
     }
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < y; j++)
+        for (int j = 0; j < 3; j++)
         {
             matrix2[j][i] = matrix1[i][j];
         }
     }
  
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < y; j++)
+        for (int j = 0; j < 3; j++)
         {
             printf("%d\t", matrix1[i][j]);
         }
@@ -37,9 +31,9 @@ int main()
 
     printf("\nthe transpose of the matrix is given below\n\n\n\n");
 
-    for (int i = 0; i < y; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < x; j++)
+        for (int j = 0; j < 3; j++)
         {
             printf("%d\t", matrix2[i][j]);
         }
